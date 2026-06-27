@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalaba UI Prototype</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">Kalaba</div>
+    <nav>
+      <a href="#home">Главная</a>
+      <a href="#search">Поиск услуг</a>
+      <a href="#company">Карточка компании</a>
+      <a href="#request">Создание запроса</a>
+      <a href="#offers">Предложения</a>
+      <a href="#deal">Сделка</a>
+      <a href="#crm">Кабинет компании</a>
+    </nav>
+  </aside>
+
+  <main>
+    <section id="home" class="screen">
+      <div class="hero">
+        <div>
+          <h1>Найдите проверенного исполнителя</h1>
+          <p>Kalaba помогает быстро найти компанию, получить предложения и пройти весь путь до завершения сделки.</p>
+          <div class="searchbar">
+            <input placeholder="Какая услуга нужна?" />
+            <input placeholder="Город или район" />
+            <button>Найти</button>
+          </div>
+        </div>
+        <div class="hero-card">
+          <span class="badge">Trust Score 96%</span>
+          <h3>Подтверждённые отзывы</h3>
+          <p>Отзывы доступны только после завершённых сделок.</p>
+        </div>
+      </div>
+      <h2>Популярные категории</h2>
+      <div class="grid categories">
+        <div>Ремонт</div><div>Клининг</div><div>Красота</div><div>Авто</div><div>Обучение</div><div>IT-услуги</div>
+      </div>
+    </section>
+
+    <section id="search" class="screen">
+      <h1>Поиск услуг</h1>
+      <div class="layout">
+        <div class="filters">
+          <h3>Фильтры</h3>
+          <label><input type="checkbox" checked /> Только с отзывами</label>
+          <label><input type="checkbox" /> Работают сегодня</label>
+          <label><input type="checkbox" /> Выезд на дом</label>
+          <label><input type="checkbox" /> Высокий Trust Score</label>
+        </div>
+        <div class="results">
+          <div class="company-card"><div><h3>MasterFix</h3><p>Ремонт квартир · 4.8 · 128 отзывов</p><span class="badge">Trust Score 94%</span></div><button>Открыть</button></div>
+          <div class="company-card"><div><h3>CleanPro</h3><p>Клининг · 4.7 · 82 отзыва</p><span class="badge">Trust Score 91%</span></div><button>Открыть</button></div>
+          <div class="company-card"><div><h3>AutoHelp</h3><p>Автосервис · 4.6 · 56 отзывов</p><span class="badge">Trust Score 88%</span></div><button>Открыть</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="company" class="screen">
+      <h1>Карточка компании</h1>
+      <div class="profile">
+        <div>
+          <h2>MasterFix</h2>
+          <p>Ремонт квартир, сантехника, электрика</p>
+          <div class="stats"><span>4.8 рейтинг</span><span>128 отзывов</span><span>94% Trust Score</span></div>
+          <button>Создать запрос</button>
+        </div>
+        <div class="panel">
+          <h3>Услуги</h3>
+          <ul><li>Ремонт ванной — от 300 €</li><li>Электрика — от 50 €</li><li>Сантехника — от 60 €</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="request" class="screen">
+      <h1>Создание запроса</h1>
+      <div class="form">
+        <label>Категория <input value="Ремонт ванной" /></label>
+        <label>Описание <textarea>Нужно обновить плитку и заменить сантехнику.</textarea></label>
+        <label>Адрес <input value="Барселона, Eixample" /></label>
+        <label>Бюджет <input value="1000–1500 €" /></label>
+        <button>Опубликовать запрос</button>
+      </div>
+    </section>
+
+    <section id="offers" class="screen">
+      <h1>Предложения компаний</h1>
+      <div class="offer"><h3>MasterFix</h3><p>Срок: 5 дней · Цена: 1200 € · Гарантия: 12 месяцев</p><button>Принять предложение</button></div>
+      <div class="offer"><h3>RenovaPro</h3><p>Срок: 7 дней · Цена: 1050 € · Гарантия: 6 месяцев</p><button>Принять предложение</button></div>
+    </section>
+
+    <section id="deal" class="screen">
+      <h1>Сделка</h1>
+      <div class="timeline"><div class="done">Запрос создан</div><div class="done">Предложение принято</div><div class="active">Работа выполняется</div><div>Завершение</div><div>Отзыв</div></div>
+      <div class="panel"><h3>MasterFix · Ремонт ванной</h3><p>Статус: В работе</p><button>Подтвердить завершение</button></div>
+    </section>
+
+    <section id="crm" class="screen">
+      <h1>Кабинет компании</h1>
+      <div class="dashboard"><div class="metric"><strong>24</strong><span>новых запроса</span></div><div class="metric"><strong>12</strong><span>активных сделок</span></div><div class="metric"><strong>4.8</strong><span>средний рейтинг</span></div><div class="metric"><strong>94%</strong><span>Trust Score</span></div></div>
+      <div class="panel"><h3>Последние заявки</h3><table><tr><th>Клиент</th><th>Услуга</th><th>Статус</th></tr><tr><td>Анна</td><td>Ремонт ванной</td><td>Новое</td></tr><tr><td>Иван</td><td>Электрика</td><td>В работе</td></tr><tr><td>Мария</td><td>Сантехника</td><td>Завершено</td></tr></table></div>
+    </section>
+  </main>
+</body>
+</html>
